@@ -1,15 +1,15 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { ChevronDown, Zap, Shield, Eye, Volume2 } from "lucide-react"
-import Image from "next/image"
+import { motion } from "framer-motion";
+import { ChevronDown, Zap, Shield, Eye, Volume2 } from "lucide-react";
+import Image from "next/image";
 
 export default function HeroSection() {
   const fadeInUp = {
     initial: { opacity: 0, y: 60 },
     animate: { opacity: 1, y: 0 },
     transition: { duration: 0.8, ease: "easeOut" },
-  }
+  };
 
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-20">
@@ -36,7 +36,9 @@ export default function HeroSection() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent" />
               <div className="absolute bottom-4 left-4 right-4">
-                <p className="text-blue-300 text-sm font-medium">Our Engineering Team</p>
+                <p className="text-blue-300 text-sm font-medium">
+                  Our Engineering Team
+                </p>
               </div>
             </motion.div>
           </div>
@@ -62,21 +64,29 @@ export default function HeroSection() {
           {...fadeInUp}
           transition={{ delay: 0.4 }}
         >
-          Advanced AI-powered system combining computer vision and audio processing to detect, track, and neutralize
-          unauthorized drone activities with precision and efficiency.
+          Advanced AI-powered system combining computer vision and audio
+          processing to detect, track, and neutralize unauthorized Drones and
+          UAVs activities with precision and efficiency.
         </motion.p>
 
-        <motion.div className="flex flex-wrap justify-center gap-4 mb-16" {...fadeInUp} transition={{ delay: 0.6 }}>
+        <motion.div
+          className="flex flex-wrap justify-center gap-4 mb-16"
+          {...fadeInUp}
+          transition={{ delay: 0.6 }}
+        >
           {[
             { icon: Eye, label: "Computer Vision" },
             { icon: Volume2, label: "Audio Processing" },
             { icon: Zap, label: "Real-time Detection" },
-            { icon: Shield, label: "Security System" },
+            { icon: Shield, label: "Anti Drones And UAVs System" },
           ].map((feature, index) => (
             <motion.div
               key={feature.label}
               className="flex items-center space-x-2 bg-slate-800/50 backdrop-blur-sm px-4 py-2 rounded-full border border-blue-500/30"
-              whileHover={{ scale: 1.05, backgroundColor: "rgba(83,135,207,0.1)" }}
+              whileHover={{
+                scale: 1.05,
+                backgroundColor: "rgba(83,135,207,0.1)",
+              }}
               transition={{ duration: 0.3 }}
             >
               <feature.icon className="w-5 h-5 text-blue-400" />
@@ -94,5 +104,5 @@ export default function HeroSection() {
         </motion.div>
       </div>
     </section>
-  )
+  );
 }

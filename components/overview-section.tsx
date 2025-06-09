@@ -1,14 +1,14 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { Eye, Volume2, Zap, Shield, ImageIcon, FileText } from "lucide-react"
+import { motion } from "framer-motion";
+import { Eye, Volume2, Zap, Shield, ImageIcon, FileText } from "lucide-react";
 
 export default function OverviewSection() {
   const fadeInUp = {
     initial: { opacity: 0, y: 60 },
     animate: { opacity: 1, y: 0 },
     transition: { duration: 0.8, ease: "easeOut" },
-  }
+  };
 
   const staggerContainer = {
     animate: {
@@ -16,18 +16,19 @@ export default function OverviewSection() {
         staggerChildren: 0.2,
       },
     },
-  }
+  };
 
   const features = [
     {
       title: "AI-Powered Detection",
-      description: "Advanced neural networks for accurate drone identification",
+      description:
+        "Advanced YOLO Models for accurate Drones and UAVs Detection and Tracking.",
       icon: Eye,
       color: "from-blue-500 to-cyan-500",
     },
     {
       title: "Audio Analysis",
-      description: "Sophisticated sound pattern recognition algorithms",
+      description: "Sophisticated CNN Model for sound pattern recognition",
       icon: Volume2,
       color: "from-purple-500 to-pink-500",
     },
@@ -55,7 +56,7 @@ export default function OverviewSection() {
       icon: FileText,
       color: "from-teal-500 to-cyan-500",
     },
-  ]
+  ];
 
   return (
     <section id="overview" className="py-20 relative z-10">
@@ -67,13 +68,23 @@ export default function OverviewSection() {
           variants={staggerContainer}
           className="text-center mb-16"
         >
-          <motion.h2 variants={fadeInUp} className="text-4xl md:text-5xl font-bold mb-6 text-blue-400">
+          <motion.h2
+            variants={fadeInUp}
+            className="text-4xl md:text-5xl font-bold mb-6 text-blue-400"
+          >
             Project Overview
           </motion.h2>
-          <motion.p variants={fadeInUp} className="text-xl text-gray-400 max-w-4xl mx-auto leading-relaxed">
-            Our cutting-edge system integrates advanced machine learning algorithms with real-time processing
-            capabilities to provide comprehensive drone detection and countermeasure solutions for critical
-            infrastructure protection.
+          <motion.p
+            variants={fadeInUp}
+            className="text-xl text-gray-400 max-w-4xl mx-auto leading-relaxed"
+          >
+            This project develops an integrated system for detecting, tracking,
+            and blocking unauthorized Drones and UAVs in real time. It uses a
+            camera-based AI vision module and microphone for visual and acoustic
+            detection, followed by vision-based tracking. A custom-designed
+            wideband helical antenna with a signal synthesizer transmits jamming
+            signals to disrupt drone and UAV communications, ensuring accurate
+            detection, continuous tracking, and effective neutralization.
           </motion.p>
         </motion.div>
 
@@ -85,7 +96,11 @@ export default function OverviewSection() {
           className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
           {features.map((feature, index) => (
-            <motion.div key={feature.title} variants={fadeInUp} className="group relative">
+            <motion.div
+              key={feature.title}
+              variants={fadeInUp}
+              className="group relative"
+            >
               <div className="relative overflow-hidden rounded-xl bg-slate-800/50 backdrop-blur-sm border border-blue-500/20 p-6 h-full transition-all duration-300 hover:border-blue-500/50 hover:bg-slate-800/70">
                 <div
                   className={`absolute inset-0 bg-gradient-to-br ${feature.color} opacity-0 group-hover:opacity-10 transition-opacity duration-300`}
@@ -109,5 +124,5 @@ export default function OverviewSection() {
         </motion.div>
       </div>
     </section>
-  )
+  );
 }

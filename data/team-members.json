@@ -3,35 +3,40 @@
     "id": 1,
     "name": "Ahmed Samir",
     "role": "Team Lead",
-    "image": "/placeholder.svg?height=300&width=300&text=Ahmed",
-    "linkedin": "https://linkedin.com/in/ahmed-samir"
+    "description": "Developed AI-based drone detection and tracking using vision and sound.",
+    "image": "/Ahmed.jpg",
+    "linkedin": "https://www.linkedin.com/in/ahmed-samir-90b8aa1b3/"
   },
   {
     "id": 2,
     "name": "Nada Raafat",
     "role": "AI Specialist",
-    "image": "/placeholder.svg?height=300&width=300&text=Nada",
-    "linkedin": "https://linkedin.com/in/nada-raafat"
+    "description": "Developed drone detection models and tracking using vision and sound.",
+    "image": "/Nada.jpg",
+    "linkedin": "https://www.linkedin.com/in/nada-raafat-5aa1a6320/"
   },
   {
     "id": 3,
     "name": "Mariez Samy",
-    "role": "Computer Vision Engineer",
-    "image": "/placeholder.svg?height=300&width=300&text=Mariez",
-    "linkedin": "https://linkedin.com/in/mariez-samy"
+    "role": "Antenna Designer",
+    "description": "Wideband Helical Antenna Design and Implementation.",
+    "image": "/Mariez.jpg",
+    "linkedin": "https://www.linkedin.com/in/mariez-samy-755720222/"
   },
   {
     "id": 4,
     "name": "Amr Ashraf",
-    "role": "Audio Processing Engineer",
-    "image": "/placeholder.svg?height=300&width=300&text=Amr",
-    "linkedin": "https://linkedin.com/in/amr-ashraf"
+    "role": "RF and Blocking Specialist",
+    "description": "Implemented the blocking system to disable unauthorized drones upon detection.",
+    "image": "/Amr.jpg",
+    "linkedin": "https://www.linkedin.com/in/amr-ashraf-380a021b4/"
   },
   {
     "id": 5,
     "name": "Hamza Farahat",
-    "role": "System Architect",
-    "image": "/placeholder.svg?height=300&width=300&text=Hamza",
-    "linkedin": "https://linkedin.com/in/hamza-farahat"
+    "role": "RF and Blocking Specialist",
+    "description": "Implemented the blocking system to disable unauthorized drones upon detection.",
+    "image": "/Hamza.jpg",
+    "linkedin": "https://www.linkedin.com/in/hamza-farhat-5a464a232/"
   }
 ]

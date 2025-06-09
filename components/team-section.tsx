@@ -1,33 +1,33 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import Image from "next/image"
-import { Linkedin } from "lucide-react"
-import { useEffect, useState } from "react"
-import type { TeamMember } from "@/types/team"
+import { motion } from "framer-motion";
+import Image from "next/image";
+import { Linkedin } from "lucide-react";
+import { useEffect, useState } from "react";
+import type { TeamMember } from "@/types/team";
 
 export default function TeamSection() {
-  const [teamMembers, setTeamMembers] = useState<TeamMember[]>([])
-  const [isLoading, setIsLoading] = useState(true)
+  const [teamMembers, setTeamMembers] = useState<TeamMember[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     // In a real app, you might fetch this from an API
     import("@/data/team-members.json")
       .then((data) => {
-        setTeamMembers(data.default)
-        setIsLoading(false)
+        setTeamMembers(data.default);
+        setIsLoading(false);
       })
       .catch((error) => {
-        console.error("Failed to load team members:", error)
-        setIsLoading(false)
-      })
-  }, [])
+        console.error("Failed to load team members:", error);
+        setIsLoading(false);
+      });
+  }, []);
 
   const fadeInUp = {
     initial: { opacity: 0, y: 60 },
     animate: { opacity: 1, y: 0 },
     transition: { duration: 0.8, ease: "easeOut" },
-  }
+  };
 
   const staggerContainer = {
     animate: {
@@ -35,7 +35,7 @@ export default function TeamSection() {
         staggerChildren: 0.2,
       },
     },
-  }
+  };
 
   return (
     <section id="team" className="py-20 bg-slate-800/30 relative z-10">
@@ -47,11 +47,18 @@ export default function TeamSection() {
           variants={staggerContainer}
           className="text-center mb-16"
         >
-          <motion.h2 variants={fadeInUp} className="text-4xl md:text-5xl font-bold mb-6 text-blue-400">
+          <motion.h2
+            variants={fadeInUp}
+            className="text-4xl md:text-5xl font-bold mb-6 text-blue-400"
+          >
             Our Team
           </motion.h2>
-          <motion.p variants={fadeInUp} className="text-xl text-gray-400 max-w-3xl mx-auto">
-            Meet the brilliant minds behind our innovative drone detection system
+          <motion.p
+            variants={fadeInUp}
+            className="text-xl text-gray-400 max-w-3xl mx-auto"
+          >
+            Meet the brilliant minds behind our innovative drone detection
+            system
           </motion.p>
         </motion.div>
 
@@ -113,7 +120,7 @@ export default function TeamSection() {
                       <div className="absolute inset-0.5 rounded-full bg-slate-800"></div>
                       <div className="relative rounded-full overflow-hidden w-32 h-32 border-2 border-blue-500/30">
                         <Image
-                          src={member.image || "/placeholder.svg"}
+                          src={member.image || "/placeholder-user.jpg"}
                           alt={member.name}
                           width={128}
                           height={128}
@@ -128,7 +135,13 @@ export default function TeamSection() {
                     </h3>
 
                     {/* Role */}
-                    <p className="text-gray-400 mb-4 text-sm text-center">{member.role}</p>
+                    <p className="text-gray-400 mb-4 text-sm text-center">
+                      {member.role}
+                    </p>
+                    {/* Bio */}
+                    <p className="text-gray-300 text-sm text-center mb-4">
+                      {member.description}
+                    </p>
 
                     {/* LinkedIn button with hover effect */}
                     <motion.a
@@ -149,5 +162,5 @@ export default function TeamSection() {
         )}
       </div>
     </section>
-  )
+  );
 }
