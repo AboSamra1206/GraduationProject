@@ -7,6 +7,7 @@ import OverviewSection from "@/components/overview-section"
 import DocumentationSection from "@/components/documentation-section"
 import GallerySection from "@/components/gallery-section"
 import DownloadsSection from "@/components/downloads-section"
+import TeamSection from "@/components/team-section"
 import Footer from "@/components/footer"
 
 export default function HomePage() {
@@ -18,6 +19,7 @@ export default function HomePage() {
       <OverviewSection />
       <DocumentationSection />
       <GallerySection />
+      <TeamSection />
       <DownloadsSection />
       <Footer />
     </div>

@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Ahmed Samir",
+    "role": "Team Lead",
+    "image": "/placeholder.svg?height=300&width=300&text=Ahmed",
+    "linkedin": "https://linkedin.com/in/ahmed-samir"
+  },
+  {
+    "id": 2,
+    "name": "Nada Raafat",
+    "role": "AI Specialist",
+    "image": "/placeholder.svg?height=300&width=300&text=Nada",
+    "linkedin": "https://linkedin.com/in/nada-raafat"
+  },
+  {
+    "id": 3,
+    "name": "Mariez Samy",
+    "role": "Computer Vision Engineer",
+    "image": "/placeholder.svg?height=300&width=300&text=Mariez",
+    "linkedin": "https://linkedin.com/in/mariez-samy"
+  },
+  {
+    "id": 4,
+    "name": "Amr Ashraf",
+    "role": "Audio Processing Engineer",
+    "image": "/placeholder.svg?height=300&width=300&text=Amr",
+    "linkedin": "https://linkedin.com/in/amr-ashraf"
+  },
+  {
+    "id": 5,
+    "name": "Hamza Farahat",
+    "role": "System Architect",
+    "image": "/placeholder.svg?height=300&width=300&text=Hamza",
+    "linkedin": "https://linkedin.com/in/hamza-farahat"
+  }
+]

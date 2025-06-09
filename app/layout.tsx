@@ -1,27 +1,20 @@
-import type React from "react"
-import type { Metadata } from "next"
-import { Cairo } from "next/font/google"
-import "./globals.css"
-
-const cairo = Cairo({
-  subsets: ["latin"],
-  variable: "--font-cairo",
-})
+import type { Metadata } from 'next'
+import './globals.css'
 
 export const metadata: Metadata = {
-  title: "Vision and Audio-Based AI System for Drones and UAVs - Graduation Project",
-  description: "Advanced AI-powered graduation project system for drone detection, tracking and blocking",
-    generator: 'v0.dev'
+  title: 'v0 App',
+  description: 'Created with v0',
+  generator: 'v0.dev',
 }
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode
-}) {
+}>) {
   return (
-    <html lang="en" className={cairo.variable}>
-      <body className="font-cairo antialiased">{children}</body>
+    <html lang="en">
+      <body>{children}</body>
     </html>
   )
 }

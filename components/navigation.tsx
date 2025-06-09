@@ -16,7 +16,7 @@ export default function Navigation() {
             DRONE DETECTION AI
           </motion.div>
           <div className="hidden md:flex space-x-8">
-            {["Overview", "Documentation", "Gallery", "Downloads"].map((item) => (
+            {["Overview", "Documentation", "Gallery", "Team", "Downloads"].map((item) => (
               <motion.a
                 key={item}
                 href={`#${item.toLowerCase()}`}
