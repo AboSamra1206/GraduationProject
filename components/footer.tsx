@@ -13,7 +13,8 @@ export default function Footer() {
           transition={{ duration: 0.8 }}
         >
           <h3 className="text-2xl font-bold text-blue-400 mb-4">
-            Vision and Audio-Based AI System
+            AI-Based Vision and Audio System for Drone and UAV Detection,
+            Tracking and Blocking{" "}
           </h3>
           <p className="text-gray-400 mb-6">
             Advanced Drones and UAVs detection and countermeasure technology

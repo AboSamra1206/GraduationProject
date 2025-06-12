@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Graduation Project - Vision and Audio-Based AI System",
+  title: "AI-Based Vision and Audio System for Drone and UAV Detection, Tracking and Blocking",
   description:
     "Advanced Drones and UAVs detection and countermeasure technology",
 };

@@ -28,18 +28,14 @@ export default function HeroSection() {
               transition={{ duration: 0.3 }}
             >
               <Image
-                src="/placeholder.svg?height=400&width=800"
+                src="/project.jpg"
                 alt="Team Photo"
                 width={800}
                 height={400}
                 className="w-full h-auto"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent" />
-              <div className="absolute bottom-4 left-4 right-4">
-                <p className="text-blue-300 text-sm font-medium">
-                  Our Engineering Team
-                </p>
-              </div>
+              <div className="absolute bottom-4 left-4 right-4"></div>
             </motion.div>
           </div>
         </motion.div>
@@ -48,7 +44,7 @@ export default function HeroSection() {
           className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-purple-400 to-blue-600 bg-clip-text text-transparent leading-tight"
           {...fadeInUp}
         >
-          Vision and Audio-Based AI System
+          AI-Based Vision and Audio System
         </motion.h1>
 
         <motion.h2
@@ -56,7 +52,7 @@ export default function HeroSection() {
           {...fadeInUp}
           transition={{ delay: 0.2 }}
         >
-          for Drones and UAVs Detection, Tracking and Blocking
+          for Drone and UAV Detection, Tracking and Blocking{" "}
         </motion.h2>
 
         <motion.p
