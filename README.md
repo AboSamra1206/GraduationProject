@@ -1,4 +1,4 @@
-# AI-Based Vision and Audio System for Drone and UAV Detection, Tracking and Blocking
+# AI-Based Vision and Audio System for Drone and UAV Detection, Tracking and Blocking.
 
 *Automatically synced with your [v0.dev](https://v0.dev) deployments*
 
