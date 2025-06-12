@@ -29,7 +29,7 @@ export default function HeroSection() {
             >
               <Image
                 src="/project.jpg"
-                alt="Team Photo"
+                alt="Project Photo"
                 width={800}
                 height={400}
                 className="w-full h-auto"
