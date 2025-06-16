@@ -81,10 +81,7 @@ export default function OverviewSection() {
             This project develops an integrated system for detecting and
             tracking unauthorized Drones and UAVs in real time. It uses a
             camera-based AI vision module and microphone for visual and acoustic
-            detection, followed by vision-based tracking. A custom-designed
-            wideband helical antenna with a signal synthesizer transmits jamming
-            signals to disrupt drone and UAV communications, ensuring accurate
-            detection, continuous tracking, and effective neutralization.
+            detection, followed by vision-based tracking.
           </motion.p>
         </motion.div>
 
