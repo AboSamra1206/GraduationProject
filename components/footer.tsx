@@ -17,7 +17,7 @@ export default function Footer() {
             Tracking.
           </h3>
           <p className="text-gray-400 mb-6">
-            Advanced Drones and UAVs detection and countermeasure technology
+            Advanced Drones and UAVs detection and Tracking.
           </p>
           <div className="text-sm text-gray-500">
             © 2025 Graduation Project. All rights reserved.
