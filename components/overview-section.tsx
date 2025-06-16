@@ -39,8 +39,8 @@ export default function OverviewSection() {
       color: "from-green-500 to-emerald-500",
     },
     {
-      title: "Automated Response",
-      description: "Intelligent countermeasure deployment system",
+      title: "Day And Night Operation",
+      description: "Intelligent detection in various lighting conditions",
       icon: Shield,
       color: "from-red-500 to-orange-500",
     },
@@ -78,8 +78,8 @@ export default function OverviewSection() {
             variants={fadeInUp}
             className="text-xl text-gray-400 max-w-4xl mx-auto leading-relaxed"
           >
-            This project develops an integrated system for detecting, tracking,
-            and blocking unauthorized Drones and UAVs in real time. It uses a
+            This project develops an integrated system for detecting and
+            tracking unauthorized Drones and UAVs in real time. It uses a
             camera-based AI vision module and microphone for visual and acoustic
             detection, followed by vision-based tracking. A custom-designed
             wideband helical antenna with a signal synthesizer transmits jamming

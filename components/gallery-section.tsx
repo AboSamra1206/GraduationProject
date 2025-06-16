@@ -38,17 +38,6 @@ export default function GallerySection() {
       img: "/panel.jpg",
     },
     {
-      title: "Programmable frequency synthesizer",
-      description: "To generate the desired blocking signal.",
-      img: "/synthesizer.jpg",
-    },
-    {
-      title: "Wideband helical antenna 1.1:1.7 GHz",
-      description:
-        "The antenna is used for signal blocking and jamming purposes.",
-      img: "/whiteband.jpg",
-    },
-    {
       title: "AI Model",
       description:
         "Our AI model detects and classifies Drones and UAVs in real time using visual and audio data, ensuring reliable day and night operation. It autonomously sends commands to tracking and jamming systems for rapid response.",

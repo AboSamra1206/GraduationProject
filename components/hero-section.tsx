@@ -52,7 +52,7 @@ export default function HeroSection() {
           {...fadeInUp}
           transition={{ delay: 0.2 }}
         >
-          for Drone and UAV Detection, Tracking and Blocking{" "}
+          for Drone and UAV Detection and Tracking.
         </motion.h2>
 
         <motion.p
@@ -61,7 +61,7 @@ export default function HeroSection() {
           transition={{ delay: 0.4 }}
         >
           Advanced AI-powered system combining computer vision and audio
-          processing to detect, track, and neutralize unauthorized Drones and
+          processing to detect and track unauthorized Drones and
           UAVs activities with precision and efficiency.
         </motion.p>
 
