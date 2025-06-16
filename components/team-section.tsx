@@ -60,8 +60,7 @@ export default function TeamSection() {
             Meet the brilliant minds behind our innovative drone detection
             system
           </motion.p>
-        </motion.div>
-
+        </motion.div>{" "}
         {isLoading ? (
           <div className="flex justify-center">
             <div className="w-12 h-12 rounded-full border-4 border-blue-400 border-t-transparent animate-spin"></div>
@@ -72,13 +71,13 @@ export default function TeamSection() {
             whileInView="animate"
             viewport={{ once: true }}
             variants={staggerContainer}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8"
+            className="flex flex-wrap justify-center items-start gap-8 max-w-7xl mx-auto"
           >
             {teamMembers.map((member) => (
               <motion.div
                 key={member.id}
                 variants={fadeInUp}
-                className="group relative"
+                className="group relative w-full sm:w-80 max-w-sm"
                 whileHover={{ y: -10 }}
                 transition={{ duration: 0.3 }}
               >
